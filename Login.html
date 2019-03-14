@@ -21,12 +21,11 @@
             font-size: 14px;
             font-weight: bold;
         }
-
         .box-shadow {
-            -webkit-box-shadow: -2px 6px 36px -9px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: -2px 6px 36px -9px rgba(0, 0, 0, 0.75);
-            box-shadow: -2px 6px 36px -9px rgba(0, 0, 0, 0.75);
-        }
+            -webkit-box-shadow: -2px 6px 36px -9px rgba(0,0,0,0.75);
+            -moz-box-shadow: -2px 6px 36px -9px rgba(0,0,0,0.75);
+            box-shadow: -2px 6px 36px -9px rgba(0,0,0,0.75);
+                    }
 
         .main-container-grid {
             display: grid;
@@ -52,12 +51,12 @@
 
         .r2 {
             height: 100%;
-            background-color: #9BC1BC;
+            background-color: #f1f1f1;
         }
 
-        .three-column {
+        .one-column {
             display: grid;
-            grid-template-columns: 2fr 8fr 3fr;
+           
             background-color: #9BC1BC;
             grid-column-gap: 1em;
         }
@@ -65,9 +64,7 @@
         .c1 {
             min-width: 200px;
         }
-
-        .c1,
-        .c3 {
+        .c1, .c3 {
             background-color: #F4F1BB;
         }
 
@@ -77,45 +74,63 @@
             border-bottom: 1px solid #a8a7a7;
             padding-bottom: 15px;
         }
-
         .left-nav {
             list-style-type: none;
         }
-
-        .left-nav>li>a {
+        .left-nav > li > a {
             display: block;
             padding: 15px 0px 15px 30px;
-            background-color: ##9BC1BC;
+            background-color: #f4f4f4;
             font-weight: bold;
             text-decoration: none;
             transition-duration: 0.7s;
         }
-
-        .left-nav>li>a:hover {
-            background-color: #9BC1BC;
+        .left-nav > li > a:hover {
+            background-color: #8d8c8c;
         }
-
         .c2 {
             display: grid;
             grid-template-columns: repeat (4. 1fr);
-            grid-template-rows: 1fr 1fr 1fr;
+            /* grid-template-rows: 1fr 1fr 1fr; */
             grid-auto-rows: min-content;
         }
-
         .h2-content {
             grid-column: 1 / 5;
             height: 17px;
             width: 100%;
-
+           
         }
-
-        .c2>img {
-            width: 100%;
+        .c2 > img {
+            width:100%;
             align-self: center;
             max-height: 130px;
-
+         
 
         }
+        .contact-form {
+      width: 500px;
+      height: 500px;
+      margin: 100px auto;
+    }
+    .contact-input {
+      width: 91%;
+      padding: 15px;
+      margin: 5px;
+    }
+    .submit-button {
+      padding: 10px 25px;
+      background-color:#CCC;
+      float:right;
+      margin-top: 12px;
+    }
+    .error-message {
+        color: red;
+        margin-top: 5px;
+        display: block;
+        padding: 7px;
+        display: none;
+
+    }
     </style>
 
 </head>
@@ -123,40 +138,28 @@
 <body class="main-container-grid">
 
     <div class="r1">
-            <div class="logo-container">
-                    <img src="./img/sm_logo.jpg">
-                </div>
+        <h2>Richie Phetasa</h2>
     </div>
-    <div class="r2 three-column">
-        <div class="c1 box-shadow">
-            <h2 class="txt-center">Navigation</h2>
-            <ul class="left-nav">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./contact-us.html">Contact</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./login.html">Login</a></li>
-            </ul>
-        </div>
+    <div class="r2 one-column">
+       
         <div class="c2">
-            <h2 class="txt-center h2-content">Recent Product</h2>
-            <img class="box-shadow" src="./img/image_1.jpeg">
-            <img class="box-shadow" src="./img/image_2.jpeg"> 
-            <img class="box-shadow" src="./img/image_3.jpeg"> 
-            <img class="box-shadow" src="./img/image_4.jpeg"> 
-            <img class="box-shadow" src="./img/image_5.jpeg"> 
+         
+            <form class="contact-form">
+                <input placeholder="User Name" type="text" id="username" class="contact-input">
+                <input placeholder="Password" type="text" id="password" class="contact-input">
+         
+                <button onclick="login.login()" class="submit-button" type="button">login</button>
+                <span id="error-box" class="error-message"></span>
 
-            <img class="box-shadow" src="./img/image_1.jpeg"> 
+            </form>
+            
+        </div>
 
-        </div>
-        <div class="c3 box-shadow">
-            <h2 class="txt-center">Recent Product</h2>
-        </div>
     </div>
     <div class="r3">
-       For educational purposes only! No orders shall be fullfilled
+        For educational purpose only! No orders shall be fullfilled
     </div>
-    <h2>Mideterm</h2>
+
 </body>
 
 </html>
