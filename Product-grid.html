@@ -116,6 +116,45 @@
 
 
         }
+
+        .grid-button {
+            padding: 6px 12px;
+            background-color: #ccc;
+            float: right;
+        }
+
+        .gallery-table {
+            display: table;
+            width: 100%;
+        }
+
+        .gallery-table thead {
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #ccc;
+        }
+
+        .gallery-table td {
+            border: 1px solid #f1f1f1;
+        }
+
+        .gallery-table>tbody>tr>td>img {
+            max-width: 150px;
+        }
+
+        .buy-now {
+            padding: 7px 16px;
+            background-color: green;
+            float: right;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 16px;
+            transition-duration: 0.5s;
+        }
+
+        .buy-now:hover {
+            background-color: #9cb69c;
+        }
     </style>
 
 </head>
@@ -123,9 +162,9 @@
 <body class="main-container-grid">
 
     <div class="r1">
-            <div class="logo-container">
-                    <img src="./img/sm_logo.jpg">
-                </div>
+        <div class="logo-container">
+            <img src="./img/sm_logo.jpg">
+        </div>
     </div>
     <div class="r2 three-column">
         <div class="c1 box-shadow">
@@ -139,113 +178,115 @@
             </ul>
         </div>
         <div class="c2">
-                <a href="./gallery.html" class="grid-button">Gallery View</a>
-                <h2 class="txt-center h2-content">Grid View</h2>
-            </div>
-            <table class="gallery-table">
-                <thead>
-                    <tr>
-                        <td>
-                            Image
-                        </td>
-                        <td>
-                            Description
-                        </td>
-                        <td>
-                            Price
-                        </td>
-                        <td>
-                            Buy Now
-                        </td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img class="box-shadow" src="./img/image_1.jpg">
-                        </td>
-                        <td>
-                            Coffee
-                        </td>
-                        <td>
-                            $1.99
-                        </td>
-                        <td>
-                            <button class="buy-now">Buy Now</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img class="box-shadow" src="./img/2.jpg">
-                        </td>
-                        <td>
-                            Pit Bull
-                        </td>
-                        <td>
-                            $199
-                        </td>
-                        <td>
-                            <button class="buy-now">Buy Now</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img class="box-shadow" src="./img/3.jpg">
-                        </td>
-                        <td>
-                            Pit Bull
-                        </td>
-                        <td>
-                            $199
-                        </td>
-                        <td>
-                            <button class="buy-now">Buy Now</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img class="box-shadow" src="./img/4.jpg">
-                        </td>
-                        <td>
-                            Pit Bull
-                        </td>
-                        <td>
-                            $199
-                        </td>
-                        <td>
-                            <button class="buy-now">Buy Now</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img class="box-shadow" src="./img/5.jpg">
-                        </td>
-                        <td>
-                            Pit Bull
-                        </td>
-                        <td>
-                            $199
-                        </td>
-                        <td>
-                            <button class="buy-now">Buy Now</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img class="box-shadow" src="./img/6.jpg">
-                        </td>
-                        <td>
-                            Pit Bull
-                        </td>
-                        <td>
-                            $199
-                        </td>
-                        <td>
-                            <button class="buy-now">Buy Now</button>
-                        </td>
-                    </tr>
-            <h2 class="txt-center h2-content">Recent Product</h2>
-            <!-- <img class="box-shadow" src="./img/image_1.jpeg">
+            <a href="./gallery.html" class="grid-button">Gallery View</a>
+            <h2 class="txt-center h2-content">Grid View</h2>
+        </div>
+        <table class="gallery-table">
+            <thead>
+                <tr>
+                    <td>
+                        Image
+                    </td>
+                    <td>
+                        Description
+                    </td>
+                    <td>
+                        Price
+                    </td>
+                    <td>
+                        Buy Now
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img class="box-shadow" src="./img/image_1.jpg">
+                    </td>
+                    <td>
+                        Coffee
+                    </td>
+                    <td>
+                        $1.99
+                    </td>
+                    <td>
+                        <button class="buy-now">Buy Now</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="box-shadow" src="./img/image_2.jpg">
+                    </td>
+                    <td>
+                        Coffee
+                    </td>
+                    <td>
+                        $1.99
+                    </td>
+                    <td>
+                        <button class="buy-now">Buy Now</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="box-shadow" src="./img/image_3.jpg">
+                    </td>
+                    <td>
+                        Coffee
+                    </td>
+                    <td>
+                        $1.99
+                    </td>
+                    <td>
+                        <button class="buy-now">Buy Now</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="box-shadow" src="./img/image_4.jpg">
+                    </td>
+                    <td>
+                        Coffee
+                    </td>
+                    <td>
+                        $1.99
+                    </td>
+                    <td>
+                        <button class="buy-now">Buy Now</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="box-shadow" src="./img/image_5.jpg">
+                    </td>
+                    <td>
+                        Coffee
+                    </td>
+                    <td>
+                        $1.99
+                    </td>
+                    <td>
+                        <button class="buy-now">Buy Now</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="box-shadow" src="./img/image_6.jpg">
+                    </td>
+                    <td>
+                        Coffee
+                    </td>
+                    <td>
+                        $1.99
+                    </td>
+                    <td>
+                        <button class="buy-now">Buy Now</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="txt-center h2-content">Recent Product</h2>
+        <!-- <img class="box-shadow" src="./img/image_1.jpeg">
             <img class="box-shadow" src="./img/image_2.jpeg"> 
             <img class="box-shadow" src="./img/image_3.jpeg"> 
             <img class="box-shadow" src="./img/image_4.jpeg"> 
@@ -253,13 +294,13 @@
 
             <img class="box-shadow" src="./img/image_1.jpeg">  -->
 
-        </div>
-        <div class="c3 box-shadow">
-            <h2 class="txt-center">Recent Product</h2>
-        </div>
+    </div>
+    <div class="c3 box-shadow">
+        <h2 class="txt-center">Recent Product</h2>
+    </div>
     </div>
     <div class="r3">
-       For educational purposes only! No orders shall be fullfilled
+        For educational purposes only! No orders shall be fullfilled
     </div>
     <h2>Mideterm</h2>
 </body>
